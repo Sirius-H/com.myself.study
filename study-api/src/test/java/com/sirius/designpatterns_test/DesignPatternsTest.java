@@ -1,0 +1,56 @@
+package com.sirius.designpatterns_test;
+
+import com.sirius.designpatterns.factory_method.FactoryMethod_FactoryA;
+import com.sirius.designpatterns.factory_method.FactoryMethod_FactoryB;
+import com.sirius.designpatterns.factory_method.FactoryMethod_Product;
+import com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_Factory;
+import com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductA;
+import com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductB;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+import org.testng.annotations.Test;
+
+/**
+ * 描述:
+ * 
+ *
+ * @author tangzhiming
+ * @create 2018-11-29 23:15
+ */
+@ContextConfiguration(locations = {"classpath:applicationContext-service.xml"})
+public class DesignPatternsTest extends AbstractTestNGSpringContextTests {
+
+    @Autowired
+    SimpleFactoryMethod_Factory simpleFactoryMethod_factory;
+    @Autowired
+    FactoryMethod_FactoryA factoryMethod_factoryA;
+    @Autowired
+    FactoryMethod_FactoryB factoryMethod_factoryB;
+
+    /**
+     *静态工厂测试
+     */
+    @Test
+    public void test_simple_factory_method () {
+
+        SimpleFactoryMethod_ProductA aClass = (SimpleFactoryMethod_ProductA) simpleFactoryMethod_factory.getProduct("A");
+        System.out.println(aClass.use());
+
+        SimpleFactoryMethod_ProductB bClass = (SimpleFactoryMethod_ProductB) simpleFactoryMethod_factory.getProduct("B");
+        System.out.println(bClass.use());
+    }
+
+
+    /**
+     *工厂方法测试
+     */
+    @Test
+    public void test_factory_method () {
+        FactoryMethod_Product product = factoryMethod_factoryA.getProduct();
+        FactoryMethod_Product product1 = factoryMethod_factoryB.getProduct();
+        System.out.println(product.use());
+        System.out.println(product1.use());
+    }
+    
+}

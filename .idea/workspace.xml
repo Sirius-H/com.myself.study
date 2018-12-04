@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc4d653e-b593-4a28-89b2-e37b77e44763" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/study-api/src/main/resources/applicationContext-service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/study-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/array/AbstractArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/array/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/array/ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/array/ArrayQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/array/ArrayStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/test/java/array/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/study-api/src/test/java/com/sirius/array/ArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/SimpleFactoryMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/DesignPatternsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/target/classes/designpatterns/simple_factory_method/AbstractProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/target/classes/designpatterns/simple_factory_method/ConcretenessProductA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/target/classes/designpatterns/simple_factory_method/ConcretenessProductB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/target/classes/designpatterns/simple_factory_method/Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-api/target/test-classes/designpatterns_test/SimpleFactoryMethodTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,30 +74,60 @@
     <session id="640587378">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="15" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="56" />
+          <entry key="md" value="1" />
+          <entry key="simple_factory_method" value="1" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="56" />
+          <entry key="Markdown" value="1" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="16" />
+          <entry key="java" value="570" />
+          <entry key="xml" value="58" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="570" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="XML" value="58" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/AbstractProduct.java">
+        <entry file="file://$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/DesignPatternsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_Product.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
               <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
@@ -87,59 +136,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/ConcretenessProductB.java">
+        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_ProductA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            <state relative-caret-position="216">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/ArrayQueue.java">
+        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="342">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#217#218#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/ArrayStack.java">
+        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="18">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/ConcretenessProductA.java">
+        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_FactoryA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/Factory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="216">
+              <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -161,12 +191,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/AbstractProduct.java" />
-        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/ConcretenessProductA.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/AbstractProduct.java" />
         <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/ConcretenessProductB.java" />
         <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/ConcretenessProductA.java" />
-        <option value="$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/SimpleFactoryMethodTest.java" />
         <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/Factory.java" />
         <option value="$PROJECT_DIR$/study-api/src/test/java/array/ArrayTest.java" />
         <option value="$PROJECT_DIR$/study-api/src/main/java/array/ArrayStock.java" />
@@ -175,6 +201,39 @@
         <option value="$PROJECT_DIR$/study-api/src/main/java/array/Array.java" />
         <option value="$PROJECT_DIR$/study-api/src/main/java/array/ArrayList.java" />
         <option value="$PROJECT_DIR$/study-api/src/main/java/array/AbstractArray.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/Prodcut.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/Producut.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/Product.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/ConcaretenessProductB.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/ConcretenessProductaA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/Factory.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/ConcretenessFactoryA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/ConcretenessFactoryB.java" />
+        <option value="$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/SimpleFactoryMethodTest.java" />
+        <option value="$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/DesignpatternsTest.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/ConcretenessProductB.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/ConcretenessProductA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/AbstractProduct.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMehtodProduct.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethodProduct.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_Product.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/study-api/pom.xml" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/FactoryMethod_ProductB.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/FactoryMethod_ProductA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/FactoryMethod_FactoryB.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method/FactoryMethod_FactoryA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_Factory.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_Factory.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_Factory.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductB.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductB.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/com/sirius/array/AbstractArray.java" />
+        <option value="$PROJECT_DIR$/study-api/src/main/resources/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_FactoryA.java" />
+        <option value="$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/DesignPatternsTest.java" />
       </list>
     </option>
   </component>
@@ -205,10 +264,11 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="823" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-377" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -242,12 +302,16 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,7 +352,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
+              <item name="sirius" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
@@ -296,18 +360,7 @@
               <item name="study-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com.myself.study" type="462c0819:PsiDirectoryNode" />
-              <item name="study-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designpatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="simple_factory_method" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
@@ -323,52 +376,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com.myself.study" type="462c0819:PsiDirectoryNode" />
-              <item name="study-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="com.myself.study" type="462c0819:PsiDirectoryNode" />
-              <item name="study-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designpatterns_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Que&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/management/Query.java&#10;stack&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar!/java/util/Stack.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543568429980" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543922958564" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/study-api" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sirius" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/study-api/src/main/resources" />
+      <recent name="$PROJECT_DIR$/study-api/src/main/java/designpatterns/factory_method" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -383,8 +421,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="SimpleFactoryMethodTest.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DesignPatternsTest.test_factory_method">
+    <configuration name="DesignPatternsTest.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="study-api" />
       <extension name="coverage">
         <pattern>
@@ -393,7 +431,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="designpatterns_test" />
-      <option name="MAIN_CLASS_NAME" value="designpatterns_test.SimpleFactoryMethodTest" />
+      <option name="MAIN_CLASS_NAME" value="designpatterns_test.DesignPatternsTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -402,9 +440,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DesignPatternsTest.test_factory_method" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="study-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designpatterns_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="designpatterns_test" />
+      <option name="MAIN_CLASS_NAME" value="designpatterns_test.DesignPatternsTest" />
+      <option name="METHOD_NAME" value="test_factory_method" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesignPatternsTest.test_simple_factory_method" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="study-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designpatterns_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="designpatterns_test" />
+      <option name="MAIN_CLASS_NAME" value="designpatterns_test.DesignPatternsTest" />
+      <option name="METHOD_NAME" value="test_simple_factory_method" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.DesignPatternsTest.test" />
+      <item itemvalue="TestNG.DesignPatternsTest.test_simple_factory_method" />
+      <item itemvalue="TestNG.DesignPatternsTest.test_factory_method" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SimpleFactoryMethodTest.test" />
+        <item itemvalue="TestNG.DesignPatternsTest.test_factory_method" />
+        <item itemvalue="TestNG.DesignPatternsTest.test_simple_factory_method" />
+        <item itemvalue="TestNG.DesignPatternsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +503,8 @@
       <workItem from="1543503766133" duration="7315000" />
       <workItem from="1543575365093" duration="17000" />
       <workItem from="1543833419862" duration="867000" />
-      <workItem from="1543914787001" duration="615000" />
+      <workItem from="1543914787001" duration="2023000" />
+      <workItem from="1543918163844" duration="4773000" />
     </task>
     <servers />
   </component>
@@ -433,32 +515,52 @@
     <history-entry file="SimpleFactoryMethodTest_test - 2018.11.29 at 23h 20m 59s.xml">
       <configuration name="SimpleFactoryMethodTest.test" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="DesignPatternsTest_test_simple_factory_method - 2018.12.04 at 19h 13m 00s.xml">
+      <configuration name="DesignPatternsTest.test_simple_factory_method" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DesignPatternsTest_test_simple_factory_method - 2018.12.04 at 19h 13m 17s.xml">
+      <configuration name="DesignPatternsTest.test_simple_factory_method" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DesignPatternsTest_test_simple_factory_method - 2018.12.04 at 19h 13m 31s.xml">
+      <configuration name="DesignPatternsTest.test_simple_factory_method" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DesignPatternsTest_test_simple_factory_method - 2018.12.04 at 19h 19m 07s.xml">
+      <configuration name="DesignPatternsTest.test_simple_factory_method" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DesignPatternsTest_test_simple_factory_method - 2018.12.04 at 19h 19m 09s.xml">
+      <configuration name="DesignPatternsTest.test_simple_factory_method" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DesignPatternsTest_test_simple_factory_method - 2018.12.04 at 19h 19m 57s.xml">
+      <configuration name="DesignPatternsTest.test_simple_factory_method" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9199000" />
+    <option name="totallyTimeSpent" value="15380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <frame x="-377" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37052932" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18849841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32871288" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.24554455" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32871288" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -469,7 +571,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="PlantUML" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3297568" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32960597" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,6 +579,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_Factory.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/.name">
@@ -490,13 +604,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -559,87 +666,234 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/Array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/test/java/array/ArrayTest.java">
+    <entry file="file://$PROJECT_DIR$/study-api/src/test/java/com/sirius/array/ArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/SimpleFactoryMethodTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/AbstractArray.java">
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/array/AbstractArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/AbstractProduct.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/designpatterns.simple_factory_method">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>designpatterns.simple_factory_method</OriginalElement>
+          <nodes>
+            <node x="" y="">designpatterns.simple_factory_method.AbstractProduct</node>
+            <node x="" y="">designpatterns.simple_factory_method.ConcretenessProductA</node>
+            <node x="" y="">designpatterns.simple_factory_method.ConcretenessProductB</node>
+            <node x="" y="">designpatterns.simple_factory_method.Factory</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.1" x="200.99999999999994" y="123.99999999999994" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_FactoryA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_Factory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/ConcretenessProductB.java">
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        <state relative-caret-position="270">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/ArrayQueue.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_ProductA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/array/AbstractArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/array/ArrayStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/array/ArrayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/array/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/array/Array.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_ProductB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_FactoryB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_FactoryA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/resources/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/simple_factory_method/SimpleFactoryMethod_Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/array/ArrayStack.java">
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_ProductA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="216">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/ConcretenessProductA.java">
+    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/com/sirius/designpatterns/factory_method/FactoryMethod_Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study-api/src/main/java/designpatterns/simple_factory_method/Factory.java">
+    <entry file="file://$PROJECT_DIR$/study-api/src/test/java/designpatterns_test/DesignPatternsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="550">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -660,7 +914,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -695,7 +949,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>study</last-edited>
+          <last-edited>study-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
