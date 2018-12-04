@@ -387,7 +387,7 @@
     <property name="SearchEverywhereHistoryKey" value="Que&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/management/Query.java&#10;stack&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar!/java/util/Stack.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543922958564" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543924563932" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -421,7 +421,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DesignPatternsTest.test_factory_method">
+  <component name="RunManager" selected="TestNG.DesignPatternsTest.test_factory_method (1)">
     <configuration name="DesignPatternsTest.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="study-api" />
       <extension name="coverage">
@@ -440,6 +440,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DesignPatternsTest.test_factory_method (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="study-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sirius.designpatterns_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sirius.designpatterns_test" />
+      <option name="MAIN_CLASS_NAME" value="com.sirius.designpatterns_test.DesignPatternsTest" />
+      <option name="METHOD_NAME" value="test_factory_method" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DesignPatternsTest.test_factory_method" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="study-api" />
       <extension name="coverage">
@@ -451,6 +469,24 @@
       <option name="PACKAGE_NAME" value="designpatterns_test" />
       <option name="MAIN_CLASS_NAME" value="designpatterns_test.DesignPatternsTest" />
       <option name="METHOD_NAME" value="test_factory_method" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesignPatternsTest.test_simple_factory_method (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="study-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sirius.designpatterns_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sirius.designpatterns_test" />
+      <option name="MAIN_CLASS_NAME" value="com.sirius.designpatterns_test.DesignPatternsTest" />
+      <option name="METHOD_NAME" value="test_simple_factory_method" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -480,9 +516,13 @@
       <item itemvalue="TestNG.DesignPatternsTest.test" />
       <item itemvalue="TestNG.DesignPatternsTest.test_simple_factory_method" />
       <item itemvalue="TestNG.DesignPatternsTest.test_factory_method" />
+      <item itemvalue="TestNG.DesignPatternsTest.test_simple_factory_method (1)" />
+      <item itemvalue="TestNG.DesignPatternsTest.test_factory_method (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DesignPatternsTest.test_factory_method (1)" />
+        <item itemvalue="TestNG.DesignPatternsTest.test_simple_factory_method (1)" />
         <item itemvalue="TestNG.DesignPatternsTest.test_factory_method" />
         <item itemvalue="TestNG.DesignPatternsTest.test_simple_factory_method" />
         <item itemvalue="TestNG.DesignPatternsTest.test" />
