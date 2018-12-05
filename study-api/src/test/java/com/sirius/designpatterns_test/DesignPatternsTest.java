@@ -6,6 +6,7 @@ import com.sirius.designpatterns.factory_method.FactoryMethod_Product;
 import com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_Factory;
 import com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductA;
 import com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductB;
+import com.sirius.designpatterns.simple_factory_method.example.ClassPathXmlApplicationContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -32,13 +33,18 @@ public class DesignPatternsTest extends AbstractTestNGSpringContextTests {
      *静态工厂测试
      */
     @Test
-    public void test_simple_factory_method () {
+    public void test_simple_factory_method () throws Exception{
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext-service.xml");
+        SimpleFactoryMethod_ProductA simpleFactoryMethod_productA = (SimpleFactoryMethod_ProductA)context.getBean("simpleFactoryMethod_ProductA");
+        System.out.println(simpleFactoryMethod_productA.use());
 
-        SimpleFactoryMethod_ProductA aClass = (SimpleFactoryMethod_ProductA) simpleFactoryMethod_factory.getProduct("A");
-        System.out.println(aClass.use());
-
-        SimpleFactoryMethod_ProductB bClass = (SimpleFactoryMethod_ProductB) simpleFactoryMethod_factory.getProduct("B");
-        System.out.println(bClass.use());
+        SimpleFactoryMethod_ProductB simpleFactoryMethod_productB = (SimpleFactoryMethod_ProductB)context.getBean("simpleFactoryMethod_ProductB");
+        System.out.println(simpleFactoryMethod_productB.use());
+//        SimpleFactoryMethod_ProductA aClass = (SimpleFactoryMethod_ProductA) simpleFactoryMethod_factory.getProduct("A");
+//        System.out.println(aClass.use());
+//
+//        SimpleFactoryMethod_ProductB bClass = (SimpleFactoryMethod_ProductB) simpleFactoryMethod_factory.getProduct("B");
+//        System.out.println(bClass.use());
     }
 
 
