@@ -10,37 +10,44 @@ package com.sirius.array;
 public class ArrayList<T> extends AbstractArray<T> {
 
     public ArrayList() {
-        super.data = (T[]) new Object[10];
+        this(10);
     }
 
     public ArrayList(int capacity) {
         super.data = (T[]) new Object[capacity];
     }
 
+    @Override
     public void add(Object obj) {
        super.add(obj);
     }
 
+    @Override
     public void remove(int index) {
 
     }
 
+    @Override
     public int indexOf(Object object) {
         return 0;
     }
 
+    @Override
     public void add(int index,Object obj) {
-
+        super.add(index,obj);
     }
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public Object get(int index) {
         return null;
     }
 
+    @Override
     public boolean contains(Object object) {
         return false;
     }

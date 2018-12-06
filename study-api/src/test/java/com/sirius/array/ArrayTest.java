@@ -1,5 +1,8 @@
 package com.sirius.array;
 
+import org.testng.annotations.Test;
+
+
 /**
  * 描述:
  * 数组test
@@ -9,4 +12,12 @@ package com.sirius.array;
  */
 public class ArrayTest {
 
+    @Test
+    public void test_arrayList () {
+        Array array = new ArrayList<Integer>();
+        array.add(1);
+        array.add(2);
+        array.add(3);
+        System.out.println(array.toString());
+    }
 }

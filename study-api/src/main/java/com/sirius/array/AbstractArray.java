@@ -1,4 +1,5 @@
 package com.sirius.array;
+
 /**
  * 描述:
  * 数组
@@ -6,17 +7,13 @@ package com.sirius.array;
  * @author tangzhiming
  * @create 2018-11-29 23:28
  */
-public abstract class AbstractArray<T> implements Array{
+public abstract class AbstractArray<T> implements Array {
     protected T[] data;
     protected int size;
-    private int index = 0;
 
 
     public void add(Object obj) {
-        if (data != null && data.length > 0) {
-            data [index] = (T) obj;
-        }
-        throw new NullPointerException();
+        add(size, obj);
     }
 
     public void remove(int index) {
@@ -27,19 +24,56 @@ public abstract class AbstractArray<T> implements Array{
         return 0;
     }
 
+    /**
+     * 在指定位置添加元素
+     *
+     * @param index
+     * @param obj
+     */
     public void add(int index, Object obj) {
-
+        if (data == null) {
+            throw new NullPointerException();
+        }
+        if (size == data.length) {
+            throw new IllegalArgumentException();
+        }
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
+        for (int i = size - 1; i >= index; i--) {
+            data[i + 1] = data[i];
+        }
+        data[index] = (T) obj;
+        size++;
     }
 
     public int size() {
-        return 0;
+        return size;
     }
 
     public Object get(int index) {
-        return null;
+        if (index < 0 || index > data.length) {
+            throw new IndexOutOfBoundsException();
+        }
+        return data[index];
     }
 
     public boolean contains(Object object) {
         return false;
+    }
+
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        for (int i = 0; i < size; i++) {
+            result.append(data[i]);
+            if (i != size - 1) {
+                result.append(",");
+            }
+        }
+        result.append("]");
+        return result.toString();
     }
 }
