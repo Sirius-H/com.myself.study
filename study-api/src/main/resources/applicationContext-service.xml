@@ -13,7 +13,7 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
     </context:component-scan>
-
+    <!-- 一个bean 就是一个element -->
     <bean name="simpleFactoryMethod_ProductA" class="com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductA"/>
     <bean name="simpleFactoryMethod_ProductB" class="com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductB"/>
 

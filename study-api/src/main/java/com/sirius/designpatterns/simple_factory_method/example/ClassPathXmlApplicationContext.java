@@ -18,7 +18,9 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
         Element rootElement = document.getRootElement();
         List<Element> elements = rootElement.elements();
         for (Element element : elements) {
-            map.put(element.attributeValue("name"),Class.forName(element.attributeValue("class")).newInstance());
+            if ("bean".equalsIgnoreCase(element.getName())) {
+                map.put(element.attributeValue("name"),Class.forName(element.attributeValue("class")).newInstance());
+            }
         }
     }
     public Object getBean(String name) throws Exception {
