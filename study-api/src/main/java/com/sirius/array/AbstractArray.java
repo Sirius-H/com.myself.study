@@ -35,7 +35,7 @@ public abstract class AbstractArray<T> implements Array {
             throw new NullPointerException();
         }
         if (size == data.length) {
-            throw new IllegalArgumentException();
+            reseiz(data.length * 2);
         }
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
@@ -60,6 +60,18 @@ public abstract class AbstractArray<T> implements Array {
 
     public boolean contains(Object object) {
         return false;
+    }
+
+    /**
+     * 扩容
+     */
+    private void reseiz(int capacity) {
+        int length = data.length;
+        T[] data = (T[]) new Object[capacity + length];
+        for (int i = 0; i < data.length; i++) {
+            data[i] = data[i];
+        }
+        this.data = data;
     }
 
 
