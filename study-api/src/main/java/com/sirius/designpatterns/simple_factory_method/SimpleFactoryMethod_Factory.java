@@ -12,16 +12,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class SimpleFactoryMethod_Factory {
 
-    @Autowired
-    SimpleFactoryMethod_ProductA simpleFactoryMethod_productA;
-    @Autowired
-    SimpleFactoryMethod_ProductB simpleFactoryMethod_productB;
 
     public SimpleFactoryMethod_Product getProduct(String type) {
-        if ("A".equalsIgnoreCase(type)) {
-            return simpleFactoryMethod_productA;
-        } else if ("B".equalsIgnoreCase(type)) {
-            return simpleFactoryMethod_productB;
+        try {
+            if ("A".equalsIgnoreCase(type)) {
+                return (SimpleFactoryMethod_Product)Class.forName("com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductA").newInstance();
+            } else if ("B".equalsIgnoreCase(type)) {
+                return (SimpleFactoryMethod_Product)Class.forName("com.sirius.designpatterns.simple_factory_method.SimpleFactoryMethod_ProductB").newInstance();
+            }
+        } catch (Exception e) {
+            //nothing
         }
         throw new IllegalStateException("参数错误");
     }
