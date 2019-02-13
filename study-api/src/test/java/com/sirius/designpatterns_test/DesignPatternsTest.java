@@ -52,5 +52,31 @@ public class DesignPatternsTest extends AbstractTestNGSpringContextTests {
         System.out.println(product.use());
         System.out.println(product1.use());
     }
-    
+
+    public  int i = 0;
+
+
+    @Test
+    public void test_Thread() {
+        Thread thread = new Thread(new Runnable() {
+            public void run() {
+                i++;
+            }
+        });
+
+        Thread thread2 = new Thread(new Runnable() {
+            public void run() {
+                i++;
+            }
+        });
+
+        thread.start();
+        thread2.start();
+        if (i < 2) {
+            System.out.println(i);
+        }
+
+
+    }
+
 }
