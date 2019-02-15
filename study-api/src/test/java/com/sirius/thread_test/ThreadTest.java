@@ -3,6 +3,9 @@ package com.sirius.thread_test;
 import com.sirius.BaseTest;
 import org.testng.annotations.Test;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * 描述:
  *
@@ -71,7 +74,10 @@ public class ThreadTest extends BaseTest {
 
     @Test
     public void test_ThreadStatus () {
+        //线程状态 time waiting 因为被Sleep了
         new Thread(new TimeWaiting(),"TimeWaitingThread").start();
+
+        //
         new Thread(new Waiting(),"TimeWaiting").start();
 
         new Thread(new Blocked(),"Blocked-1").start();
@@ -80,6 +86,79 @@ public class ThreadTest extends BaseTest {
         sleepUtil(30000);
     }
 
+
+
+
+
+    /**
+     * 测试守护线程
+     * 1.DaemonThread 作为守护线程 如果没有isNotDaemon线程，那么会随着Main 线程的结束而结束
+     * 2.如果isNotDaemon存在 那么 DaemonThread跟随 isNotDaemon 线程的结束而结束
+     */
+    public static void main(String[] args) {
+        Thread daemon = new Thread(new DaemonThread(),"DaemonThread");
+        daemon.setDaemon(true);
+        daemon.start();
+        System.out.println(daemon.isDaemon());
+
+        Thread isNotDaemon = new Thread(new DaemonThread(),"isNotDaemon");
+        isNotDaemon.start();
+        System.out.println(isNotDaemon.isDaemon());
+    }
+    /**
+     * 过期的api 不建议使用
+     * Suspend 暂停
+     * Resume 恢复
+     * stop 停止
+     */
+
+    @Test
+    public void test_Suspend_Resume_Stop () {
+
+        //运行3秒
+        Thread suspend = new Thread(new ThreadApiTest(),"Suspend");
+        suspend.start();
+        sleepUtil(3000);
+        System.out.println("--------------------暂停--------------------");
+        suspend.suspend();//暂停
+
+        sleepUtil(3000);
+        System.out.println("--------------------恢复--------------------");
+        suspend.resume();
+
+        sleepUtil(3000);
+        suspend.stop();
+        System.out.println("--------------------停止--------------------");
+
+    }
+
+
+    static class ThreadApiTest implements Runnable {
+
+        public void run() {
+            SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
+            while (true) {
+                System.out.println(Thread.currentThread().getName() + "run at" + format.format(new Date()));
+                sleepUtil(1000);
+            }
+        }
+    }
+
+    static class DaemonThread implements Runnable {
+
+        public void run() {
+            try {
+                while (true) {
+                    for (int i = 0; i < 10; i++) {
+                        System.out.println(Thread.currentThread().getName() + "---" + i);
+                        sleepUtil(1000);
+                    }
+                }
+            } finally {
+                System.out.println("DaemonThread");
+            }
+        }
+    }
 
     //线程将不断的进行睡眠
     static class TimeWaiting implements Runnable {
@@ -119,9 +198,9 @@ public class ThreadTest extends BaseTest {
         }
     }
 
-    private static void sleepUtil (int second) {
+    private static void sleepUtil (int millis) {
         try {
-            Thread.sleep(second);
+            Thread.sleep(millis);
         } catch (InterruptedException e) {
             //nothing
         }
