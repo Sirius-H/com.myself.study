@@ -76,7 +76,6 @@ public class ThreadTest extends BaseTest {
 
         new Thread(new Blocked(),"Blocked-1").start();
         new Thread(new Blocked(),"Blocked-2").start();
-
         sleepUtil(30000);
     }
 
