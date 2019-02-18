@@ -2,29 +2,29 @@ package com.sirius.lock;
 
 public class SiriusSynchronized {
 
-    public String add () {
-        synchronized (this) {
+    public static void add () {
+        synchronized (SiriusSynchronized.class) {
             System.out.println("我被"+ Thread.currentThread().getName() + "调用了");
             try {
-                System.out.println("我睡觉了 zzzz");
+                System.out.println(Thread.currentThread().getName() + "暂停10秒");
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-       return  Thread.currentThread().getName() + "我结束了";
+        System.out.println(Thread.currentThread().getName() + "我结束了");
     }
 
 
-    public synchronized String sub () {
+    public synchronized void sub () {
         System.out.println("我被"+ Thread.currentThread().getName() + "调用了");
         try {
-            System.out.println("我睡觉了 zzzz");
+            System.out.println(Thread.currentThread().getName() + "暂停10秒");
             Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return  Thread.currentThread().getName() +"我结束了";
+        System.out.println(Thread.currentThread().getName() + "我结束了");
     }
 
 }
