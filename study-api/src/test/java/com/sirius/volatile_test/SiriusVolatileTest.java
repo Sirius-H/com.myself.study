@@ -7,43 +7,35 @@ import org.testng.annotations.Test;
 
 public class SiriusVolatileTest extends BaseTest {
 
-    @Autowired
-    SiriusVolatile siriusVolatile;
-    int i = 0;
-
-
-    public void test_Volatile () {
-
-      Thread thread =   new Thread(new Runnable() {
-            public void run() {
-                System.out.print(siriusVolatile.getV1());
-                i++;
-                if (i % 100 == 0) {
-                    System.out.println('\n');
-                }
-            }
-        });
-
-        Thread thread1 =    new Thread(new Runnable() {
-            public void run() {
-                siriusVolatile.setV1();
-            }
-        });
-
-        thread.setName("A");
-        thread1.setName("B");
-
-        //先读后写
-        thread.start();
-        thread1.start();
 
 
 
-    }
+
     @Test
-    public void test_for () {
-        for (int i = 0; i < 1; i++) {
-            test_Volatile();
+    public void test_Volatile() {
+        int i = 0;
+        while (i < 1000) {
+            //运行
+            //1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111
+            final SiriusVolatile siriusVolatile = new SiriusVolatile();
+            Thread A = new Thread(new Runnable() {
+                public void run() {
+                    System.out.print(siriusVolatile.getV1());
+                }
+            },"A");
+
+            Thread B = new Thread(new Runnable() {
+                public void run() {
+                    siriusVolatile.setV1();
+                }
+            },"B");
+
+
+            //先写后读
+            B.start();
+            A.start();
+            i++;
         }
     }
+
 }

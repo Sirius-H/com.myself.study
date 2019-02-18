@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class SiriusVolatile {
 
-    private volatile long v1 = 0L;
+    private long v1 = 0L;
 
     /**
      * volatile 变量 happens-before 规则
