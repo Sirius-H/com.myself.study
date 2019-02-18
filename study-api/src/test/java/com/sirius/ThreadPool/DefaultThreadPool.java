@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> {
@@ -33,8 +34,8 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
         initializeWorkers(workerNumbers);
     }
 
-    public void execute(Runnable runnable) {
-
+    public void execute(Job job) {
+        jobs.add(job);
     }
 
     public void shutdown() {
@@ -42,15 +43,21 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
     }
 
     public void addWorkers(int num) {
-
+        if (workers.size() >= MAX_WORKER_NUMBERS || num > 10 ) {
+            throw new IllegalArgumentException("The thread pool is full");
+        }else {
+            int count = new AtomicInteger(workerNumbers).addAndGet(num);
+            int addCount = count > 10 ? count % 10 : count;
+            initializeWorkers(addCount);
+        }
     }
 
     public void removeWorkers(int num) {
-
+        //先中断正在执行的JOB 然后删除指定书目的工作者
     }
 
     public int getJobSize() {
-        return 0;
+        return jobs.size();
     }
 
 
@@ -66,8 +73,11 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
 
     class Worker implements Runnable {
         private volatile boolean running = true;
+
+
         public void run() {
             while (running) {
+
                 synchronized (jobs) {
 
                 }
