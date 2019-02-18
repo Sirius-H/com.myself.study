@@ -8,24 +8,21 @@ import org.testng.annotations.Test;
 @ContextConfiguration(locations = {"classpath:applicationContext-service.xml"})
 public class LockTest extends AbstractTestNGSpringContextTests {
 
-    int i = 0;
-    private SiriusSynchronized test1 = new SiriusSynchronized();
 
-    private SiriusSynchronized test2 = new SiriusSynchronized();
 
     @Test
     public void test_synchronized () {
 
         Thread thread1 = new Thread(new Runnable() {
             public void run() {
-                //System.out.println(SiriusSynchronized.add());
+                SiriusSynchronized.add();
             }
         });
 
-
+        final SiriusSynchronized test = new SiriusSynchronized();
         Thread thread2 = new Thread(new Runnable() {
             public void run() {
-                System.out.println(test1.sub());
+                test.sub();
             }
         });
         thread1.setName("ADD");
