@@ -35,9 +35,13 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
     }
 
     public void execute(Job job) {
-        jobs.add(job);
-        //通知
-        jobs.notify();
+        if (job != null) {
+            synchronized (jobs) {
+                jobs.addLast(job);
+                //通知
+                jobs.notify();
+            }
+        }
     }
 
     public void shutdown() {
@@ -97,24 +101,26 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
 
         public void run() {
             while (running) {
+                Job job = null;
                 synchronized (jobs) {
                     //检查 任务列表是否为空 为空就等待 不为空则执行
-                    while (jobs.size() <= 0) {
+                    while (jobs.isEmpty()) {
                         try {
                             jobs.wait();
                         } catch (InterruptedException e) {
                             Thread.currentThread().interrupt();
                             return;
                         }
+
                     }
-                    //执行一个删除一个
-                    Job job = jobs.removeFirst();
-                    if (job != null) {
-                        try {
-                            job.run();
-                        } catch (Exception e) {
-                            //nothing
-                        }
+                    job = jobs.removeFirst();
+                }
+                //执行一个删除一个
+                if (job != null) {
+                    try {
+                        job.run();
+                    } catch (Exception e) {
+                        //nothing
                     }
                 }
             }
