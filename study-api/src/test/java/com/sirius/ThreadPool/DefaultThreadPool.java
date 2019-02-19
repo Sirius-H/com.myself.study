@@ -36,10 +36,16 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
 
     public void execute(Job job) {
         jobs.add(job);
+        //通知
+        jobs.notify();
     }
 
     public void shutdown() {
-
+        synchronized (jobs) {
+            for (Worker worker : workers) {
+                worker.shutdown();
+            }
+        }
     }
 
     public void addWorkers(int num) {
@@ -53,7 +59,20 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
     }
 
     public void removeWorkers(int num) {
-        //先中断正在执行的JOB 然后删除指定书目的工作者
+        //要中断的数目 不能大于当前已有的数目
+        if (num > workerNumbers) {
+            throw new IllegalArgumentException("The thread pool is full");
+        }
+        synchronized (jobs) {
+            int count = 0;
+            while (count < num) {
+                Worker worker = workers.get(count);
+                worker.shutdown();
+                count++;
+                workerNumbers--;
+            }
+        }
+
     }
 
     public int getJobSize() {
@@ -72,16 +91,38 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
 
 
     class Worker implements Runnable {
+
         private volatile boolean running = true;
 
 
         public void run() {
             while (running) {
-
                 synchronized (jobs) {
-
+                    //检查 任务列表是否为空 为空就等待 不为空则执行
+                    while (jobs.size() <= 0) {
+                        try {
+                            jobs.wait();
+                        } catch (InterruptedException e) {
+                            Thread.currentThread().interrupt();
+                            return;
+                        }
+                    }
+                    //执行一个删除一个
+                    Job job = jobs.removeFirst();
+                    if (job != null) {
+                        try {
+                            job.run();
+                        } catch (Exception e) {
+                            //nothing
+                        }
+                    }
                 }
             }
+        }
+
+        //停止工作
+        public void shutdown () {
+            this.running = false;
         }
     }
 }
