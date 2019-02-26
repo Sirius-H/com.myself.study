@@ -1,4 +1,4 @@
-package com.sirius.ThreadPool;
+package com.sirius.threadTest;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -113,9 +113,9 @@ public class DefaultThreadPool<Job extends Runnable> implements ThreadPool<Job> 
                         }
 
                     }
+                    //执行一个删除一个
                     job = jobs.removeFirst();
                 }
-                //执行一个删除一个
                 if (job != null) {
                     try {
                         job.run();

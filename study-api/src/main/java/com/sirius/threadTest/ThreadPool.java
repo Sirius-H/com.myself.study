@@ -1,4 +1,4 @@
-package com.sirius.ThreadPool;
+package com.sirius.threadTest;
 
 public interface ThreadPool<Job extends Runnable> {
 

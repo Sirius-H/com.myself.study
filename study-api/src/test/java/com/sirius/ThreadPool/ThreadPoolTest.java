@@ -1,6 +1,7 @@
 package com.sirius.ThreadPool;
 
 import com.sirius.BaseTest;
+import com.sirius.threadTest.DefaultThreadPool;
 import org.testng.annotations.Test;
 
 import java.text.SimpleDateFormat;
@@ -16,15 +17,6 @@ public class ThreadPoolTest extends BaseTest {
             ThreadPool threadPool = new ThreadPool("测试" + i);
             defaultThreadPool.execute(threadPool);
         }
-        //5秒之后 删除5个线程
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        defaultThreadPool.removeWorkers(1);
-
 
         try {
             Thread.sleep(200000);
