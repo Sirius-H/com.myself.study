@@ -1,7 +1,8 @@
 package com.sirius.ThreadPool.simple_http_server;
 
-import com.sirius.ThreadPool.DefaultThreadPool;
-import com.sirius.ThreadPool.ThreadPool;
+
+import com.sirius.threadTest.DefaultThreadPool;
+import com.sirius.threadTest.ThreadPool;
 
 import java.io.*;
 import java.net.ServerSocket;
