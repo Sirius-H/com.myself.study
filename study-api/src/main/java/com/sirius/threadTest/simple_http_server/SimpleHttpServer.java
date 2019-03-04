@@ -1,10 +1,15 @@
-package com.sirius.ThreadPool.simple_http_server;
-
+package com.sirius.threadTest.simple_http_server;
 
 import com.sirius.threadTest.DefaultThreadPool;
 import com.sirius.threadTest.ThreadPool;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -83,6 +88,12 @@ public class SimpleHttpServer {
 
             } catch (IOException e) {
                 e.printStackTrace();
+            } finally {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
