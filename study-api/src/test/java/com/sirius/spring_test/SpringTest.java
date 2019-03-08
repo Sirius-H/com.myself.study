@@ -25,4 +25,9 @@ public class SpringTest extends BaseTest {
         testService.test();
 
     }
+
+    @Test
+    public void test () {
+        System.out.println( 104005974 % 4);
+    }
 }
