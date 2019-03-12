@@ -2,7 +2,6 @@ package com.sirius.spring_test;
 
 import com.sirius.BaseTest;
 import com.sirius.spring.TestService;
-import com.sirius.spring.TransactionalManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 

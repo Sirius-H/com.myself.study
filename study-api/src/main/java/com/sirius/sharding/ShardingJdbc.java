@@ -111,9 +111,9 @@ public class ShardingJdbc {
 	private static DataSource createDataSource(String dataSourceName) {
 		BasicDataSource result = new BasicDataSource();
 		result.setDriverClassName(com.mysql.jdbc.Driver.class.getName());
-		result.setUrl(String.format("jdbc:mysql://10.120.22.34/%s", dataSourceName));
-		result.setUsername("sharding");
-		result.setPassword("wjmmzw");
+		result.setUrl(String.format("jdbc:mysql://localhost/%s", dataSourceName));
+		result.setUsername("root");
+		result.setPassword("123456");
 		return result;
 	}
 }
