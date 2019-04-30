@@ -13,6 +13,9 @@ import java.util.concurrent.locks.Lock;
  */
 public class MyLock implements Lock {
 
+    /**
+     * 同步器，基于同步器实现锁功能
+     */
     private Sync sync = new Sync();
 
     @Override
