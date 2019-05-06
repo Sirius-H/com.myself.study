@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-@ContextConfiguration(locations = {"classpath:applicationContext-service.xml"})
+@ContextConfiguration(locations = {"classpath:application-export.xml"})
 public class BaseTest extends AbstractTestNGSpringContextTests {
 
 }
