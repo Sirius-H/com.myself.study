@@ -1,24 +1,19 @@
 package com.sirius.volatile_;
 
-import org.springframework.stereotype.Service;
+import java.util.concurrent.atomic.AtomicInteger;
 
-@Service
+
 public class SiriusVolatile {
 
-    private long v1 = 0L;
+    private AtomicInteger value = new AtomicInteger(0);
 
-    /**
-     * volatile 变量 happens-before 规则
-     * v1 = 1l happens-before return v1
-     *
-     */
 
-    public void setV1 () {
-        v1 = 1L;
-
+    public void add () {
+        value.incrementAndGet();
     }
 
-    public long getV1(){
-        return v1;
+    public long getValue () {
+        return value.intValue();
     }
+
 }

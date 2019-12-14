@@ -12,6 +12,21 @@
     <artifactId>study-api</artifactId>
 
 
+    <!-- https://mvnrepository.com/artifact/com.aspose/aspose-cad -->
+    <dependencies>
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-cloud-storage</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+    </dependencies>
+
 
 
 

@@ -1,5 +1,8 @@
 package com.sirius.array;
 
+import com.sirius.tree.AVLTree;
+import com.sirius.tree.QueryBinaryTree;
+import com.sun.corba.se.impl.orbutil.concurrent.Sync;
 import org.testng.annotations.Test;
 
 
@@ -20,4 +23,30 @@ public class ArrayTest {
         array.add(3);
         System.out.println(array.toString());
     }
+
+
+    public static void main(String[] args) {
+//        QueryBinaryTree<Integer> queryBinaryTree = new QueryBinaryTree<>();
+//
+//        queryBinaryTree.insert(4);
+//
+//        queryBinaryTree.insert(3);
+
+//        queryBinaryTree.insert(2);
+
+       AVLTree<Integer> avlTree = new AVLTree<>();
+
+       avlTree.insert(3);
+
+       avlTree.insert(2);
+
+       avlTree.insert(1);
+
+        for (int i = 4; i < 17; i++) {
+            avlTree.insert(i);
+        }
+
+        System.out.println(1);
+    }
+
 }

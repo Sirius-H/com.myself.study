@@ -111,23 +111,26 @@ public class ThreadTest extends BaseTest {
      * stop 停止
      */
 
+
     @Test
     public void test_Suspend_Resume_Stop () {
 
+
+
         //运行3秒
-        Thread suspend = new Thread(new ThreadApiTest(),"Suspend");
-        suspend.start();
-        sleepUtil(3000);
-        System.out.println("--------------------暂停--------------------");
-        suspend.suspend();//暂停
-
-        sleepUtil(3000);
-        System.out.println("--------------------恢复--------------------");
-        suspend.resume();
-
-        sleepUtil(3000);
-        suspend.stop();
-        System.out.println("--------------------停止--------------------");
+//        Thread suspend = new Thread(new ThreadApiTest(),"Suspend");
+//        suspend.start();
+//        sleepUtil(3000);
+//        System.out.println("--------------------暂停--------------------");
+//        suspend.suspend();//暂停
+//
+//        sleepUtil(3000);
+//        System.out.println("--------------------恢复--------------------");
+//        suspend.resume();
+//
+//        sleepUtil(3000);
+//        suspend.stop();
+//        System.out.println("--------------------停止--------------------");
 
     }
 

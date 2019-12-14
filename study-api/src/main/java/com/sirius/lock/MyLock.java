@@ -48,7 +48,7 @@ public class MyLock implements Lock {
         return sync.newCondition();
     }
 
-    public static class Sync extends AbstractQueuedSynchronizer {
+    private static class Sync extends AbstractQueuedSynchronizer {
         /**
          * 独占式 获取锁
          * @param arg
